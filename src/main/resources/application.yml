@@ -1,0 +1,16 @@
+server:
+  port: 8989
+spring:
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://localhost/test1?zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+    secondary:
+      jdbc-url: jdbc:mysql://localhost/test2?zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
